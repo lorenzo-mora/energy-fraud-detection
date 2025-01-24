@@ -3,7 +3,7 @@
 An innovative and scalable system for automatic identification of energy fraud, based on the application of **AI** and **ML**, which aims at early detection of anomalous or suspicious behavior in energy consumption patterns. The ultimate goal is to <ins>prevent economic losses</ins> for electric utilities and <ins>ensure greater operational stability</ins> for the grid.
 
 ## Data
-The data adopted for the preliminary feasibility phase were downloaded from [Kaggle](https://www.kaggle.com/datasets/) via `kagglehub`. Two different datasets were adopted for this first phase.
+The data adopted for the preliminary feasibility phase were downloaded from [Kaggle](https://www.kaggle.com/datasets/) via `kagglehub`. Three different datasets were adopted for this first phase.
 
 ### 1. [__Energy Fraud Detection__](https://www.kaggle.com/datasets/taruneshburman/energy-fraud-detection) by Tarunesh Burman
 The dataset can be downloaded as follows:
@@ -78,3 +78,10 @@ whereas the CSVs relating to customers are structured as follows:
 For the latter type of table, the training set (`client_train.csv`) also has the `taregt` column, which is the variable that classifies the fraud status and takes the values 0 (non-fraudulent customer) or 1 (fraudulent customer).
 
 The analyses conducted on this dataset are collected in [`eda_samoshyn.ipynb`](eda_samoshyn.ipynb).
+
+### 3. [__Electricity Theft Detection__](https://github.com/henryRDlab/ElectricityTheftDetection) by Zibin Zheng
+The dataset can be downloaded directly from [GitHub](https://github.com/henryRDlab/ElectricityTheftDetection) and then unzipped (as specified [here](https://github.com/henryRDlab/ElectricityTheftDetection/issues/1#issuecomment-2060104395)).
+
+The `data.csv` in which the data is collected presents for each line the daily consumption of the respective POD (42'372) from 1 January 2014 to 31 October 2016. Each POD is also associated with a label (`FLAG`) that identifies a fraudulent user (`1`) from a non-fraudulent one (`0`).
+
+The analyses are collected in [`eda_zheng.ipynb`](eda_zheng.ipynb).
