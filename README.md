@@ -28,7 +28,7 @@ The file `Energy_Fraud_Detection.csv` is structured as follows:
 | `Complaints_Logged`        | _float_                                                     | Number of billing-related complaints registered by the customer |
 | `Fraud_Status`             | _Literal[`No Fraud`, `Potential Fraud`, `Confirmed Fraud`]_ | Target variable classifying fraud status                        |
 
-After an initial analysis, which can be found in [`eda_burman.ipynb`](eda_burman.ipynb), it emerged that the available instances (1000 distinct invoices) could be filtered by removing the _analogue PODs_ and divided according to the two types of customer present.
+After an initial analysis, which can be found in [`burman.ipynb`](eda\burman.ipynb), it emerged that the available instances (1000 distinct invoices) could be filtered by removing the _analogue PODs_ and divided according to the two types of customer present.
 However, the two groups thus generated consisted of 269 (_residential_ customers) and 268 instances (_business_ customers) respectively. For this reason, the trainings conducted in the same file were found to be insufficiently accurate.
 
 ### 2. [__Fraud Detection in Electricity and Gas Consumption__](https://www.kaggle.com/datasets/mrmorj/fraud-detection-in-electricity-and-gas-consumption) by Andrii Samoshyn
@@ -77,11 +77,11 @@ whereas the CSVs relating to customers are structured as follows:
 
 For the latter type of table, the training set (`client_train.csv`) also has the `taregt` column, which is the variable that classifies the fraud status and takes the values 0 (non-fraudulent customer) or 1 (fraudulent customer).
 
-The analyses conducted on this dataset are collected in [`eda_samoshyn.ipynb`](eda_samoshyn.ipynb).
+The analyses conducted on this dataset are collected in [`samoshyn.ipynb`](eda\samoshyn.ipynb).
 
 ### 3. [__Electricity Theft Detection__](https://github.com/henryRDlab/ElectricityTheftDetection) by Zibin Zheng
 The dataset can be downloaded directly from [GitHub](https://github.com/henryRDlab/ElectricityTheftDetection) and then unzipped (as specified [here](https://github.com/henryRDlab/ElectricityTheftDetection/issues/1#issuecomment-2060104395)).
 
 The `data.csv` in which the data is collected presents for each line the daily consumption of the respective POD (42'372) from 1 January 2014 to 31 October 2016. Each POD is also associated with a label (`FLAG`) that identifies a fraudulent user (`1`) from a non-fraudulent one (`0`).
 
-The analyses are collected in [`eda_zheng.ipynb`](eda_zheng.ipynb).
+> From an in-depth initial analysis, the data seem to have interesting potential as a basis for the implementation of models. However, compatibility with energy consumption data other than Chinese consumers (such as Italian consumers) must be verified.<br>The analyses are collected in [`zheng.ipynb`](eda\zheng.ipynb).
