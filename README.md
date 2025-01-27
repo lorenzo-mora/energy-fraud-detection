@@ -1,4 +1,4 @@
-# ![warning icon](warning.png) Energy Fraud Detection
+# <img src="warning.png" alt="warning icon" width="24" height="24"> Energy Fraud Detection
 
 An innovative and scalable system for automatic identification of energy fraud, based on the application of **AI** and **ML**, which aims at early detection of anomalous or suspicious behavior in energy consumption patterns. The ultimate goal is to <ins>prevent economic losses</ins> for electric utilities and <ins>ensure greater operational stability</ins> for the grid.
 
